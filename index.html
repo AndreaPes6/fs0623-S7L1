@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="content" content="Esercitazione">
+    <title>Esercitazione</title>
+    <script src="/assets/esercizio1.js" defer></script>
+    <script src="/assets/esercizio2.js" defer></script>
+</head>
+<body>
+    <h1>aggiungi il tuo animale!</h1>
+
+    <form id="petForm">
+        <label for="petName">Nome animale</label>
+        <input type="text" id="petName" required>
+
+        <label for="ownerName">il tuo name:</label>
+        <input type="text" id="ownerName" required>
+
+        <label for="species">Specie:</label>
+        <input type="text" id="species" required>
+
+        <label for="breed">Razza:</label>
+        <input type="text" id="breed" required>
+
+        <button type="button" onclick="addPet()">aggiungi animale</button>
+        <button type="button" onclick="compareOwners()">Compara i proprietari</button>
+    </form>
+
+    <h2>Lista animali</h2>
+    <ul id="petList"></ul>
+
+</body>
+</html>
